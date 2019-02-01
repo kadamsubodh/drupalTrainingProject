@@ -1,0 +1,20 @@
+name: stone
+type: theme
+description: 'stone theme'
+package: Core
+libraries:
+  - stone/stone-styles
+regions:
+  secondary_menu: secondary_menu
+  header : Header
+  primary_menu: Primary menu
+  preface : Preface
+  content : Content
+  footer_first: footer_first
+  sub_content: sub_content
+  footer : footer
+  copyright : copyright
+# Information added by Drupal.org packaging script on 2018-12-05
+version: '8.6.4'
+core: '8.x'
+

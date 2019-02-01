@@ -1,0 +1,29 @@
+
+<?php
+
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function stone_preprocess_node(&$variables) {
+  Drupal::entityManager()->getViewBuilder('node')->resetCache();  // reset catche
+
+  // Remove the "Add new comment" link on teasers or when the comment form is
+  // displayed on the page.
+	// kint_require();
+	// Kint::$maxLevels = 4;
+	if($variables['node']->getType() == 'cities') {
+	
+		print_r($variables['node']->getType());exit();
+	 // print_r($variables['content']['field_city'][0]['#plain_text']);
+	setcookie('CityName', $variables['content']['field_city']['0']['#plain_text'], time() + (86400 * 30), "/");
+	$variables['city']= $_COOKIE['CityName'];
+	echo $_COOKIE['CityName']; exit();
+	/*print_r('Cookies Set');
+	exit();*/
+	}
+}
+
+  
+  
+?>

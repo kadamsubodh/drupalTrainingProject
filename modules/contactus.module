@@ -1,0 +1,18 @@
+<?php
+	use Drupal\views\ViewExecutable;
+	use Drupal\views\Plugin\views\query\QueryPluginBase;
+
+	function contactus_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+		print_r($view->id());exit();
+	    if($view->id() == 'contact_us'){
+	   
+
+	     \Drupal::service('page_cache_kill_switch')->trigger();  //unset cache
+
+	        $location_value = $_COOKIE['CityName'];	     
+	    $query->where[0]['conditions'][0]['value'][':node__field_city_field_city_target_id'] =  $location_value;
+	//echo '<pre>';print_r($query->where);exit;
+	    }
+	}
+?>
+

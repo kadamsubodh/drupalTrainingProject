@@ -1,0 +1,6 @@
+name: Get City Name
+description: return city name based on term id from session.
+package: Custom
+type: module
+core: 8.x
+version: 1.0

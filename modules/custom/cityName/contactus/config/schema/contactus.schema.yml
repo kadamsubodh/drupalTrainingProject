@@ -1,0 +1,19 @@
+contactus.settings:
+  type: config_object
+  label: 'contact us settings'
+  mapping:
+    contactus:
+      type: mapping
+      mapping:
+        name:
+          type: text
+          label: 'contact us generator name:'
+        email:
+          type: text
+          label: 'user email:'
+        contactNo:
+          type: text
+          label: 'user contact number:'
+        body:
+          type: text
+          label: 'user message:'

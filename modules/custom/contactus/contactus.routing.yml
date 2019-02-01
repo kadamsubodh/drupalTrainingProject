@@ -1,0 +1,7 @@
+contactus.contact:
+  path: '/drupalTrainingProject/contactus'
+  defaults:
+    _title: 'Contact Us'
+    _controller: '\Drupal\contactus\Controller\ContactusController::contact'
+  
+

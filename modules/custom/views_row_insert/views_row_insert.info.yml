@@ -1,0 +1,13 @@
+name: Views Row Insert
+type: module
+description: Views style plugin to insert custom rows with html data or blocks content into view results.
+package: Views
+# core: '8.x'
+dependencies:
+- drupal:views
+
+# Information added by Drupal.org packaging script on 2018-11-07
+version: '8.x-1.2'
+core: '8.x'
+project: 'views_row_insert'
+datestamp: 1541610484
